@@ -5,7 +5,7 @@ int main()
     int b;
     scanf("%d %d",&a,&b);
     int sum =a+b;
-    prnitf("%d",a,b,sum);
+    prnitf("%d",sum);
     return 0;
     
 }
