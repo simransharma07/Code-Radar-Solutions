@@ -2,9 +2,8 @@
 int main()
 {
     char str[100];
-    scanf("%s",&str);
     int age;
-    scanf("%age",&age);
+    scanf("%str %age",&str,&age);
     char hobby[100];
     scanf("%s\n",&hobby);
     printf("Name: %s\n",str);
