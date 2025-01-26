@@ -8,6 +8,6 @@ int main()
     }
     else{
         printf("Fasle\n");
-        return 0;
+    return 0;
     }
 }
