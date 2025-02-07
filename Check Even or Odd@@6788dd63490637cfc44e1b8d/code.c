@@ -6,8 +6,9 @@ int main()
     if(a/2){
         printf("Even");
     }
-    else{
+    if(a!/2){
         printf("Odd");
-        return 0;
     }
+        
+    
 }
