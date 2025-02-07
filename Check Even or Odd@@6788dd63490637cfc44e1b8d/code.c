@@ -1,10 +1,15 @@
 #include <stdio.h>
 int main()
 {
-    int a;
-    scanf("%d",&a);
+    int a,b;
+    scanf("%d\n",&a);
+    scanf("%d\n",&b)
     if(a/2){
-        printf("Even");
+        printf("Even\n");
+    }
+    else{
+        printf("Odd\n");
+        return 0;
     }
     
         
