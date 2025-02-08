@@ -1,12 +1,18 @@
 #include <stdio.h>
-int main()
-{
-    char ch[100];
-    scanf("%c",&ch);
-    if(ch>100){
-        printf("Uppercase");
+#include <ctype.h>  // For isalpha, isupper, and islower functions
+
+int main() {
+    char ch;
+    scanf("%c", &ch);
+    if (isalpha(ch)) {
+        if (isupper(ch)) {
+            printf("Uppercase\n", ch);
+        } else if (islower(ch)) {
+            printf("Lowercase\n", ch);
+        }
+    } else {
+        printf("Not an alphabet\n", ch);
     }
-    else{
-        printf("Lowercase");
-    }
+
+    return 0;
 }
