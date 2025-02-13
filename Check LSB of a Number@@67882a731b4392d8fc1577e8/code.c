@@ -4,9 +4,9 @@ int main()
     int a;
     printf("%d",&a);
     if(a&1){
-        printf("Set");
+        printf("Set %d",a);
     }
     else{
-        printf("Not Set");
+        printf("Not Set ");
     }
 }
