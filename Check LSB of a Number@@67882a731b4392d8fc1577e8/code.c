@@ -7,6 +7,6 @@ int main()
         printf("Set %d",a);
     }
     else{
-        printf("Not Set ");
+        printf("Not Set %d",a);
     }
 }
