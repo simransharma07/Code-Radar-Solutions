@@ -1,22 +1,26 @@
 #include <stdio.h>
 
-int countLeadingZeros(int num) {
-    int count = 0;
-
-    // Loop through each bit from the most significant to least significant
-    for (int i = 31; i >= 0; i--) {
-        if ((num >> i) & 1) {
-            break; // Stop counting once the first '1' is found
-        }
-        count++; // Increment the count for each leading zero
+int count_leading_zeroes(int n) {
+    // Assuming 32-bit integer size
+    if (n == 0) {
+        return 32;  // Special case: If the number is 0, all 32 bits are zero
     }
 
+    int count = 0;
+    // Loop through all bits from the most significant bit to the least significant
+    for (int i = 31; i >= 0; i--) {
+        if ((n & (1 << i)) != 0) {
+            break;  // Stop as soon as we find the first 1
+        }
+        count++;
+    }
     return count;
 }
 
 int main() {
-    int num = 1; // You can change this to any integer
-    int leadingZeros = countLeadingZeros(num);
-    printf(" %d\n", num, leadingZeros);
+    int num;
+    scanf("%d", &num);
+
+    printf(" %d\n", count_leading_zeroes(num));
     return 0;
 }
