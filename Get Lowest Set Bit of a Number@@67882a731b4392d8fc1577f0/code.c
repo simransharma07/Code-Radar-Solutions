@@ -1,13 +1,17 @@
 #include<stdio.h>
-#include<math.h>
-int lbit(int n){
-    if(n==0)
-    return 0;
-    return (int)(log2(n&-n))+1;
-
-}
 int main(){
     int n;
     scanf("%d",&n);
-    printf("%d",lbit);
+    if(n==0){
+        printf("0\n")
+        return 0;
+    }
+    int pos=1;
+    while((n&1)==0){
+        n=n>>1;
+        pos++;
+
+    }
+    printf("%d\n",pos);
+    return0;
 }
