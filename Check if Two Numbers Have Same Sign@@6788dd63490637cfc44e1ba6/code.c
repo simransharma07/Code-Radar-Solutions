@@ -6,10 +6,10 @@ int main()
     if(a>0 && b>0){
         printf("Same Sign\n");
     }
-    else if(a<0 &&b<0){
+    if(a<0 &&b<0){
         printf("Same Sign");
     }
-    if(a==0 && b==0){
+    else{
         printf("Different Sign\n");
     }
 }
