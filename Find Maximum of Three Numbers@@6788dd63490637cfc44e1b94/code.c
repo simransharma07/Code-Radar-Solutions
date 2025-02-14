@@ -10,5 +10,8 @@ int main()
     if(b&&c<a){
         printf("%d\n",a);
     }
+    if(a&&b==c){
+        printf("%d\n",c);
+    }
 
 }
