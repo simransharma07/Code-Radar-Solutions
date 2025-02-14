@@ -7,5 +7,8 @@ int main()
     {
         printf("%d\n",c);
     }
+    if(b&&c<a){
+        printf("%d\n",a);
+    }
 
 }
