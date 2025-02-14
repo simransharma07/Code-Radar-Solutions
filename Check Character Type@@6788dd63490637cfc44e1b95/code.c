@@ -4,9 +4,9 @@ int main()
     char ch;
     scanf("%c",&ch);
     if(ch=97){
-        printf("Vowel");
+        printf("Vowel\n");
     }
     if(ch=122){
-        printf("Consonent");
+        printf("Consonent\n");
     }
 }
