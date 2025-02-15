@@ -6,7 +6,7 @@ int main(){
         i=N*i;
        
     }
-    printf("%d\n",N)
+    printf("%d\n",i);
     
 
     
