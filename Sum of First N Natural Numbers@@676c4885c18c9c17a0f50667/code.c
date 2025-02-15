@@ -3,8 +3,8 @@ int main(){
     int N;
     scanf("%d",&N);
     int sum=0;
-    for(int j=N;j>=1;j--){
-        sum=sum+j;//sum+=i
+    for(int i=1;i<=n;i++){
+        sum=sum+i;//sum+=i
         
     }
     printf("%d\n",sum);
