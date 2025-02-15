@@ -1,7 +1,6 @@
 #include <stdio.h>
 int main()
 {
-    int main(){
         char ch;
         scanf("%c",&ch);
         if(ch>='A' && ch<='Z'){
@@ -13,5 +12,5 @@ int main()
         else{
             printf("Not an alphabet");
         }
-    }
+    
 }
