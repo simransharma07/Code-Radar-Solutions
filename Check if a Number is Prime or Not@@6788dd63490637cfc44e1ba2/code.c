@@ -1,17 +1,25 @@
 #include <stdio.h>
 
 int main() {
-    int a;
-    scanf("%d", &a);
-
-    if (a < 2)
-        printf("Not Prime");
-    else if (a == 2 || a == 3 || a == 5 || a == 7) 
-        printf("Prime");
-    else if (a % 2 == 0 || a % 3 == 0 || a % 5 == 0 || a % 7 == 0)
-        printf("Not Prime");
+    int n, i, is_prime = 1;
+    scanf("%d", &n);
+    
+    if (n == 2) {
+        printf("Prime\n");
+        return 0;
+    }
+    
+    for (i = 2; i < n; i++) {
+        if (n % i == 0) {
+            is_prime = 0;
+            break;
+        }
+    }
+    
+    if (is_prime)
+        printf("Prime\n");
     else
-        printf("Prime");
-
+        printf("Not Prime\n");
+    
     return 0;
 }
