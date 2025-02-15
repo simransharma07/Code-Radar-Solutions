@@ -4,9 +4,9 @@ int main(){
     scanf("%d",&a);
     if((a%1==0)||(!(a%1==0)))
     {
-        printf("Prime\n")
+        printf("Prime\n");
     }
     else{
-        printf("Not Prime")
+        printf("Not Prime");
     }
 }
