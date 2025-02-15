@@ -1,18 +1,17 @@
 #include <stdio.h>
-#include <ctype.h>  // For isalpha, isupper, and islower functions
-
-int main() {
-    char ch;
-    scanf("%c", &ch);
-    if (isalpha(ch)) {
-        if (isupper(ch)) {
-            printf("Uppercase\n");
-        } else if (islower(ch)) {
-            printf("Lowercase\n");
+int main()
+{
+    int main(){
+        char ch;
+        scanf("%c",&ch);
+        if(ch>='A' && ch<='Z'){
+            printf("Uppercase");
         }
-    } else {
-        printf("Not an alphabet\n");
+        else if(ch>='a' && ch<='z'){
+            printf("Lowercase");
+        }
+        else{
+            printf("Not an alphabet");
+        }
     }
-
-    return 0;
 }
