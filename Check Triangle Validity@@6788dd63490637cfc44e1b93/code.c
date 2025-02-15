@@ -6,7 +6,7 @@ int main() {
     scanf("%f %f %f", &a, &b, &c);
 
     // Check triangle validity
-    if (a + b > c && a + c > b && b + c > a) {
+    if (a + b > c && b + c > a && c + a> b) {
         printf("Valid\n");
     } else {
         printf("Invalid\n");
