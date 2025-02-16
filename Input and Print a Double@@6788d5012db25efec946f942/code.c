@@ -2,5 +2,5 @@
 int main(){
     double float n;
     scanf("%hf",&n);
-    printf("You entered: %hd",n);
+    printf("You entered: %hf",n);
 }
